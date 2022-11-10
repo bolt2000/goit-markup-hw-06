@@ -435,7 +435,7 @@
         </div>
 
 <div class="form-footer">
-
+  <p class="form-footer-head">Підпишіться на розсилку</p>
 
 </div>
 
@@ -456,23 +456,32 @@
   <p class="modal-h2">Залиште свої дані, ми вам передзвонимо</p>
 
           <div class="form-field">
-            <label for="name" class="form-label">I`мя</label>
-            <input class="form-input" type="text" name="name" id="name" />
+            <label for="name" class="form-label">Ім'я</label>
+            <input class="form-input" type="text" name="name" id="name" 
+            />
+            <svg class="" width="16" height="12">
+              <use class="" href="./images/icons.svg#icon-cname"></use>
+            </svg>
           </div>
 
           <div class="form-field">
             <label for="tel" class="form-label">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <input class="form-input" type="tel" name="tel" id="tel" />
           </div>
 
           <div class="form-field">
             <label for="mail" class="form-label">Пошта</label>
-            <input type="email" name="mail" id="mail" />
+            <input class="form-input" type="email" name="mail" id="mail" placeholder="user@domain">
           </div>   
    
 <div class="form-field">
-  <label for="comment" class="form-label">Коментар</label>
-<textarea class="comment" name="comment" id="comment" cols="30" rows="4" placeholder="Введіть текст"></textarea>
+  <label for="comment">Коментар</label>
+<textarea class="comment" name="comment"
+id="comment"
+cols="30"
+rows="4"
+placeholder="Введіть текст">
+</textarea>
 </div>
      
 <div class="form-checkbox">
