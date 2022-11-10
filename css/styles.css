@@ -772,3 +772,92 @@ button:focus {
 .contacts-address {
   transition: color 250ms var(--timing-function);
 }
+
+/* CSS content Modal windows */
+
+.modal-h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc (23 / 20);
+  letter-spacing: 0.03em;
+  padding-bottom: 12px;
+  text-align: center;
+  color: var(--brand-black);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 528px;
+  height: 100%;
+  padding: 40px 40px 40px 40px;
+  /* border: 1px solid tomato; */
+}
+
+.form-field {
+  /* outline: 1px solid blue; */
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field input {
+  height: 40px;
+  padding: 14px 16px 14px 25px;
+  outline: transparent;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.form-input:focus {
+  border: 1px solid #2196F3;
+border-radius: 1px;
+cursor: pointer;
+}
+
+.form-checkbox {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/* Form button CSS */
+.form-button {
+  font-weight: 700;
+font-size: 16px;
+line-height: calc(30 / 16);
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--brand-white);
+  background:var(--brand-blue);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px 52px;
+border: none;
+}
+
+.form-button:focus,
+.form-button:hover {
+  background: var(--button-main-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+.comment {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  color: rgba(117, 117, 117, 0.5);
+}
