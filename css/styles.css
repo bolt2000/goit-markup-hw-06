@@ -458,7 +458,6 @@ button:focus {
 
 .footer-pad {
   margin-right: 70px;
- 
 }
 
 .footer-flex {
@@ -497,12 +496,12 @@ button:focus {
 
 .team-social-link:focus,
 .team-social-link:hover {
+  outline: none;
   fill: var(--brand-white);
   background-color: var(--button-main-color);
 }
 
 .footer-social {
-  
   flex-direction: column;
   /* background-color: tomato; */
   width: 300px;
@@ -519,7 +518,6 @@ button:focus {
   margin-bottom: 20px;
   margin-left: 0px;
   margin-right: 0px;
-  
 }
 
 .footer-social-list {
@@ -558,14 +556,14 @@ button:focus {
 
 .form-in-footer {
   width: 358px;
-height: 50px;
-color: var(--brand-white);
+  height: 50px;
+  color: var(--brand-white);
   padding: 15px 15px 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-margin-right: 12px;
-background-color: var(--brand-background);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  background-color: var(--brand-background);
 }
 
 .form-footer input::placeholder {
@@ -632,6 +630,7 @@ background-color: var(--brand-background);
 
 .clients-icon:focus,
 .clients-link:focus {
+  outline: none;
   fill: var(--brand-blue);
   border: 1px solid var(--brand-blue);
 }
@@ -799,15 +798,14 @@ background-color: var(--brand-background);
   visibility: hidden;
 }
 
-
 .contact-address {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #FFFFFF;
- width: 231px;
- }
+  color: #ffffff;
+  width: 231px;
+}
 
 .contact-address,
 .contacts-footer,
@@ -850,8 +848,7 @@ background-color: var(--brand-background);
 
 .form-field input {
   height: 40px;
-  padding-left : 42px;
-  /* outline: transparent; */
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
@@ -860,10 +857,12 @@ background-color: var(--brand-background);
 }
 
 .form-label {
+  display: block;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
   margin-bottom: 4px;
   font-size: 12px;
 }
-
 
 .form-field .icon {
   /* border: 1px solid red; */
@@ -879,24 +878,20 @@ background-color: var(--brand-background);
 
 .form-input:hover + .icon,
 .form-field:focus-within > .icon {
-  fill:var(--brand-blue);
+  fill: var(--brand-blue);
 }
 
 .form-input:hover,
 .form-input:focus,
 .comment:hover,
-.comment:focus
- {
+.comment:focus {
+  outline: #188ce8;
   border: 1px solid var(--brand-blue);
   border-color: var(--brand-blue);
   border-radius: 4px;
   cursor: pointer;
 }
 
-.form-checkbox {
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
 
 /* Form button CSS */
 .form-button {
@@ -917,7 +912,6 @@ background-color: var(--brand-background);
   padding: 10px 52px;
   border: none;
   transition: background-color 250ms var(--timing-function);
-
 }
 
 .form-button:focus,
@@ -942,20 +936,50 @@ background-color: var(--brand-background);
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
+/* Policy + manual icon */
 
-.form-checkbox label {
+.dogovor {
+  margin-left: 2px;
+  color: var(--brand-blue);
+}
+
+.lable-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
-/* .form-checkbox input[type="checkbox"] {
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-} */
+.lable-checkbox > .icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--brand-black);
+  border-radius: 2px;
+  margin-right: 7px;
+  transition: background-color 250ms var(--timing-function);
+}
 
-
-.form-footer-head {
-
-
+.checkbox:checked + .icon {
+  border: var(--brand-blue);
+  background-color: var(--brand-blue);
+  background-image: url('../images/check.svg');
+  background-size: contain;
+  background-origin: border-box;
 }
