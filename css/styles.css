@@ -51,7 +51,10 @@ body,
   color: var(--brand-body);
   font-size: 14px;
   font-weight: 400;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
+
 /* Общий */
 .container {
   padding-left: 15px;
@@ -950,8 +953,6 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
