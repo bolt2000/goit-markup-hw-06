@@ -135,6 +135,7 @@ body,
   letter-spacing: 0.02em;
 }
 /* Delete no line */
+.contacts-address,
 .nav-link,
 .link,
 .logo,
@@ -438,9 +439,13 @@ button:focus {
 
 .contacts-address {
   color: var(--brand-white);
-  font-weight: inherit;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: calc(24 / 14);
 }
 
+.contacts-address:hover,
+.contacts-address:focus,
 .contacts-footer:hover,
 .contacts-footer:focus {
   color: var(--brand-blue);
